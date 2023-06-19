@@ -1,0 +1,17 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueba1Poke.Views.CrearSquirtleView">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="30">
+            <Label Text="Creación de Squirtle" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" Margin="0,0,0,20" />
+
+            <Entry Placeholder="Nombre" Text="{Binding Nombre}" Margin="0,0,0,10" />
+            <Entry Placeholder="Fecha de Nacimiento" Text="{Binding FechaNacimiento}" Margin="0,0,0,20" />
+
+            <Button Text="Crear Pokémon" BackgroundColor="#2196F3" TextColor="White" Command="{Binding CrearPokemonCommand}" />
+
+            <Label Text="{Binding ResultadoCreacion}" ></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

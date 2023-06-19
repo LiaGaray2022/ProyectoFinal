@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueba1Poke.Views.viewCategorias"
+             xmlns:local ="clr-namespace:Prueba1Poke.ViewModels"
+             >
+
+    <ContentPage.BindingContext>
+        <local:viewModelCategorias></local:viewModelCategorias>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout   VerticalOptions="CenterAndExpand" Padding="30" >
+            <Label Text="Categorias" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" Margin="0,0,0,20" />
+
+            <CollectionView  SelectionMode="Single" 
+                             SelectedItem="{Binding ObjetoSeleccionado}"  
+                             ItemsSource="{Binding lista}"
+                             SelectionChangedCommand="{Binding redirigirCategoria}"
+                             >
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="30" Margin="5" >
+
+                            <Grid.RowDefinitions  >
+                                <RowDefinition Height="100"  ></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" Grid.Row="0" Source="{Binding urlCategoria}" Aspect="AspectFill" />
+                            <Label Grid.Column="1" Grid.Row="0"  Text="{Binding nombre} "></Label>
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+
+            </CollectionView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
