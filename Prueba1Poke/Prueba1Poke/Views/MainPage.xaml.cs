@@ -19,8 +19,7 @@ namespace Prueba1Poke
         {
             base.OnAppearing();
 
-            // Realiza aquí cualquier acción necesaria para refrescar la vista
-            // Puede ser actualizar datos, cargar información, etc.
+            
         }
     }
 }
