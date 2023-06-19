@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj": {}
+    "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj": {
+    "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj",
+        "projectUniqueName": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj",
         "projectName": "Prueba1Poke",
-        "projectPath": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj",
+        "projectPath": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj",
         "packagesPath": "C:\\Users\\Marcela Andrade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\obj\\",
+        "outputPath": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

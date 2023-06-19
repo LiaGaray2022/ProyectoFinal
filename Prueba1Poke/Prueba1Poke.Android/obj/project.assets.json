@@ -3414,11 +3414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke.Android\\Prueba1Poke.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke.Android\\Prueba1Poke.Android.csproj",
       "projectName": "Prueba1Poke.Android",
-      "projectPath": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke.Android\\Prueba1Poke.Android.csproj",
+      "projectPath": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke.Android\\Prueba1Poke.Android.csproj",
       "packagesPath": "C:\\Users\\Marcela Andrade\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke.Android\\obj\\",
+      "outputPath": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3439,8 +3439,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj": {
-              "projectPath": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj"
+            "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj": {
+              "projectPath": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj"
             }
           }
         }

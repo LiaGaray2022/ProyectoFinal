@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8JmlgF6OXyPeUjiuCqoZBWsW9GGER1EvOMWcCGspN/kVS3/8a2oUPlMe7ih4a7Pr6dUG94gXie83cYlkwJ3Kyg==",
+  "dgSpecHash": "eJ9ASg8OiUfXaWMnobX0IjdxVmQzxNBy9BQ8AV/8n776fpmDJfmS68Ff+0f50wJ6+3Oj33cQQ+2rZPfj4rTDXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke.Android\\Prueba1Poke.Android.csproj",
+  "projectFilePath": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke.Android\\Prueba1Poke.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcela Andrade\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Marcela Andrade\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

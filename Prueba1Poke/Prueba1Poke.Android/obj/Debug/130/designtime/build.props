@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638227677832757466
+_nugetassetstimestamp=638227689704799883
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\marcela andrade\downloads\prueba1poke-main (1)\prueba1poke-main\prueba1poke\prueba1poke.android\prueba1poke.android.csproj
+projectfullpath=c:\users\marcela andrade\documents\github\prueba1poke-main\proyectofinal\prueba1poke\prueba1poke.android\prueba1poke.android.csproj

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kkVmy7QZMx43UHbOE5CZhCknjKLiuxI+FjkttFyiQ2QCSHwadcNJznhGko+jkWob3RB63Q9+EAEzt1YE6x1XbQ==",
+  "dgSpecHash": "dHsJcGg9pcmBSdTanLGbg1Xdift5pNF6MfCC3tlr1aeC+cmFd3hqznWrxKtdhGXldN70EgdjA1RA7+68rd+iQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marcela Andrade\\Downloads\\Prueba1Poke-main (1)\\Prueba1Poke-main\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj",
+  "projectFilePath": "C:\\Users\\Marcela Andrade\\Documents\\GitHub\\Prueba1Poke-main\\ProyectoFinal\\Prueba1Poke\\Prueba1Poke\\Prueba1Poke.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcela Andrade\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Marcela Andrade\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
