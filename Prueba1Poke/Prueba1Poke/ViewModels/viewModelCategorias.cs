@@ -44,14 +44,6 @@ namespace Prueba1Poke.ViewModels
             lista.Add(new Categorias()
             {
 
-                nombre = "Evoluciona tu pokemon",
-                urlCategoria = "https://th.bing.com/th/id/OIP.zOrNUwwhUnuvYI8teU2omgHaEK?pid=ImgDet&rs=1"
-
-            });
-
-            lista.Add(new Categorias()
-            {
-
                 nombre = "Reporte de Pokemones",
                 urlCategoria = "https://th.bing.com/th/id/R.905e789d5c1f308d687a96a8f006af4f?rik=Dm2H%2bumFC2OA1A&riu=http%3a%2f%2fwww.beewalls.com%2fuser-content%2fuploads%2fwall%2fo%2f99%2flittle_pokemon_wallpaper.jpg&ehk=Xl8JtUIdszpUwSqn0ZXNiSmK1eyAzadVa5b78xMVLHI%3d&risl=&pid=ImgRaw&r=0"
 
@@ -72,7 +64,7 @@ namespace Prueba1Poke.ViewModels
                     case "Creación de Squirtle":
                         await Application.Current.MainPage.Navigation.PushAsync(new CrearSquirtleView());
                         break;
-                    case "Evoluciona tu pokemon":
+                    case "Reporte de Pokemones":
                         await Application.Current.MainPage.Navigation.PushAsync(new CrearPichuView());
                         break;
                     default:

@@ -1,17 +1,36 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Prueba1Poke.Views.CrearSquirtleView">
+             x:Class="Prueba1Poke.Views.CrearSquirtleView"
+             xmlns:viewmodels="clr-namespace:Prueba1Poke.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewmodels:CrearSquirtleViewModel />
+    </ContentPage.BindingContext>
 
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" Padding="30">
             <Label Text="Creación de Squirtle" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" Margin="0,0,0,20" />
 
-            <Entry Placeholder="Nombre" Text="{Binding Nombre}" Margin="0,0,0,10" />
+            <Entry Placeholder="Nombre" Text="{Binding Nombre, Mode=TwoWay}" Margin="0,0,0,10" />
             <Entry Placeholder="Fecha de Nacimiento" Text="{Binding FechaNacimiento}" Margin="0,0,0,20" />
 
-            <Button Text="Crear Pokémon" BackgroundColor="#2196F3" TextColor="White" Command="{Binding CrearPokemonCommand}" />
-            <Button Text="Guardar" Command="{Binding GuardarPokemonCommand}" />
-            <Label Text="{Binding ResultadoCreacion}" ></Label>
+            <Button Text="Crear Pokémon" BackgroundColor="#2196F3" TextColor="White" Command="{Binding GuardarPokemonCommand}" />
+            <Button Text="Evolucionar Pokémon" BackgroundColor="#4CAF50" TextColor="White" Command="{Binding EvolucionarPokemonCommand}" />
+
+            <ListView ItemsSource="{Binding Pokemones}" SelectedItem="{Binding SelectedPokemon}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Nombre}" FontAttributes="Bold" />
+                                <Label Text="{Binding ObtenerUltimaEvolucion}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label Text="{Binding ResultadoCreacion}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

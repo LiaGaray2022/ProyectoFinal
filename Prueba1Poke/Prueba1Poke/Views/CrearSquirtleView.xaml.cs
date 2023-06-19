@@ -10,7 +10,6 @@ namespace Prueba1Poke.Views
         public CrearSquirtleView()
         {
             InitializeComponent();
-            BindingContext = new CrearSquirtleViewModel();
         }
     }
 }

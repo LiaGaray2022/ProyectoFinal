@@ -10,7 +10,6 @@ namespace Prueba1Poke.Views
         public CrearCharmanderView()
         {
             InitializeComponent();
-            BindingContext = new CrearCharmanderViewModel();
         }
     }
 }

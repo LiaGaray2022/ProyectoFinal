@@ -14,8 +14,7 @@ public class Pokemon : IPokemonEvolucionable
 
     public Pokemon(string nombre, DateTime fechaNacimiento)
     {
-        Nombre = nombre;
-        FechaNacimiento = fechaNacimiento;
+      
     }
 
     public virtual string ObtenerSiguienteEvolucion()
@@ -66,6 +65,90 @@ public class Pikachu : Pokemon
 public class Raichu : Pokemon
 {
     public Raichu(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+    {
+    }
+}
+
+    public class Charmander : Pokemon
+    {
+        public Charmander(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+        {
+        }
+
+        public override string ObtenerSiguienteEvolucion()
+        {
+            return "Charmeleon";
+        }
+
+        public override Pokemon CrearEvolucion()
+        {
+            return new Charmeleon(Nombre, FechaNacimiento);
+        }
+    }
+
+    public class Charmeleon : Pokemon
+    {
+        public Charmeleon(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+        {
+        }
+
+        public override string ObtenerSiguienteEvolucion()
+        {
+            return "Charizard";
+        }
+
+        public override Pokemon CrearEvolucion()
+        {
+            return new Charizard(Nombre, FechaNacimiento);
+        }
+    }
+
+    public class Charizard : Pokemon
+    {
+        public Charizard(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+        {
+        }
+
+    
+}
+
+public class Squirtle : Pokemon
+{
+    public Squirtle(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+    {
+    }
+
+    public override string ObtenerSiguienteEvolucion()
+    {
+        return "Wartortle";
+    }
+
+    public override Pokemon CrearEvolucion()
+    {
+        return new Wartortle(Nombre, FechaNacimiento);
+    }
+}
+
+class Wartortle : Pokemon
+{
+    public Wartortle(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+    {
+    }
+
+    public override string ObtenerSiguienteEvolucion()
+    {
+        return "Blastoise";
+    }
+
+    public override Pokemon CrearEvolucion()
+    {
+        return new Blastoise(Nombre, FechaNacimiento);
+    }
+}
+
+class Blastoise : Pokemon
+{
+    public Blastoise(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
     }
 }

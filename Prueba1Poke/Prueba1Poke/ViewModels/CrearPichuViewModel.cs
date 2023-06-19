@@ -24,6 +24,7 @@ namespace Prueba1Poke.ViewModels
                 }
             }
         }
+
         private string nombre;
         public string Nombre
         {
