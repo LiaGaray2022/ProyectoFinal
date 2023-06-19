@@ -9,10 +9,17 @@
 
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" Padding="30">
+            <Image Source="https://i.pinimg.com/736x/9b/0e/e2/9b0ee202a7695540034f28e4a3b0294d.jpg"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   Margin="0,0,0,20"/>
+
             <Label Text="Creación de Pichu" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" Margin="0,0,0,20" />
 
             <Entry Placeholder="Nombre" Text="{Binding Nombre, Mode=TwoWay}" Margin="0,0,0,10" />
-            <Entry Placeholder="Fecha de Nacimiento" Text="{Binding FechaNacimiento}" Margin="0,0,0,20" />
+            <DatePicker Date="{Binding FechaNacimiento}" Margin="0,0,0,20" />
 
             <Button Text="Crear Pokémon" BackgroundColor="#2196F3" TextColor="White" Command="{Binding GuardarPokemonCommand}" />
             <Button Text="Evolucionar Pokémon" BackgroundColor="#4CAF50" TextColor="White" Command="{Binding EvolucionarPokemonCommand}" />
@@ -23,12 +30,14 @@
                         <ViewCell>
                             <StackLayout Padding="10">
                                 <Label Text="{Binding Nombre}" FontAttributes="Bold" />
-                                <Label Text="{Binding ObtenerUltimaEvolucion}" />
+                                <Label Text="{Binding NombreEvolucion}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+
+            <Button Text="Generar Reporte" BackgroundColor="#FFC107" TextColor="White" Command="{Binding GenerarReporteCommand}" />
 
             <Label Text="{Binding ResultadoCreacion}" />
         </StackLayout>

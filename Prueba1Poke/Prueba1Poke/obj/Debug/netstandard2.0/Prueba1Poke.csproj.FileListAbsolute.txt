@@ -51,7 +51,6 @@ C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1
 C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1Poke\Prueba1Poke\obj\Debug\netstandard2.0\Views\CrearPichuView.xaml.g.cs
 C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1Poke\Prueba1Poke\obj\Debug\netstandard2.0\Views\CrearSquirtleView.xaml.g.cs
 C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1Poke\Prueba1Poke\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
-C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1Poke\Prueba1Poke\obj\Debug\netstandard2.0\Views\PokemonViewModel.xaml.g.cs
 C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1Poke\Prueba1Poke\obj\Debug\netstandard2.0\Views\viewCategorias.xaml.g.cs
 C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1Poke\Prueba1Poke\obj\Debug\netstandard2.0\Views\viewCreacionUsuarios.xaml.g.cs
 C:\Users\Marcela Andrade\Documents\GitHub\Prueba1Poke-main\ProyectoFinal\Prueba1Poke\Prueba1Poke\obj\Debug\netstandard2.0\Prueba1Poke.AssemblyInfoInputs.cache

@@ -14,9 +14,6 @@
     <EmbeddedResource Update="Views\MainPage.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PokemonViewModel.xaml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Update="Views\viewCategorias.xaml">
       <SubType>Designer</SubType>
     </EmbeddedResource>

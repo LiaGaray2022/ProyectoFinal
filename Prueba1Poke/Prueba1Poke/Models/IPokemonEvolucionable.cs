@@ -11,15 +11,18 @@ public class Pokemon : IPokemonEvolucionable
 {
     public string Nombre { get; set; }
     public DateTime FechaNacimiento { get; set; }
+    public string TipoPoder { get; protected set; }
 
     public Pokemon(string nombre, DateTime fechaNacimiento)
     {
-      
+        Nombre = nombre;
+        FechaNacimiento = fechaNacimiento;
+        TipoPoder = "Normal";
     }
 
     public virtual string ObtenerSiguienteEvolucion()
     {
-        return "LLegó a su limite de evoluciones, bais";
+        return "Llegó a su límite de evoluciones, bye";
     }
 
     public virtual Pokemon CrearEvolucion()
@@ -32,6 +35,7 @@ public class Pichu : Pokemon
 {
     public Pichu(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
+        TipoPoder = "Eléctrico";
     }
 
     public override string ObtenerSiguienteEvolucion()
@@ -49,6 +53,7 @@ public class Pikachu : Pokemon
 {
     public Pikachu(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
+        TipoPoder = "Eléctrico";
     }
 
     public override string ObtenerSiguienteEvolucion()
@@ -66,56 +71,59 @@ public class Raichu : Pokemon
 {
     public Raichu(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
+        TipoPoder = "Eléctrico";
     }
 }
 
-    public class Charmander : Pokemon
+public class Charmander : Pokemon
+{
+    public Charmander(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
-        public Charmander(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
-        {
-        }
-
-        public override string ObtenerSiguienteEvolucion()
-        {
-            return "Charmeleon";
-        }
-
-        public override Pokemon CrearEvolucion()
-        {
-            return new Charmeleon(Nombre, FechaNacimiento);
-        }
+        TipoPoder = "Fuego";
     }
 
-    public class Charmeleon : Pokemon
+    public override string ObtenerSiguienteEvolucion()
     {
-        public Charmeleon(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
-        {
-        }
-
-        public override string ObtenerSiguienteEvolucion()
-        {
-            return "Charizard";
-        }
-
-        public override Pokemon CrearEvolucion()
-        {
-            return new Charizard(Nombre, FechaNacimiento);
-        }
+        return "Charmeleon";
     }
 
-    public class Charizard : Pokemon
+    public override Pokemon CrearEvolucion()
     {
-        public Charizard(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
-        {
-        }
+        return new Charmeleon(Nombre, FechaNacimiento);
+    }
+}
 
-    
+public class Charmeleon : Pokemon
+{
+    public Charmeleon(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+    {
+        TipoPoder = "Fuego";
+    }
+
+    public override string ObtenerSiguienteEvolucion()
+    {
+        return "Charizard";
+    }
+
+    public override Pokemon CrearEvolucion()
+    {
+        return new Charizard(Nombre, FechaNacimiento);
+    }
+}
+
+public class Charizard : Pokemon
+{
+    public Charizard(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
+    {
+        TipoPoder = "Fuego";
+    }
 }
 
 public class Squirtle : Pokemon
 {
     public Squirtle(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
+        TipoPoder = "Agua";
     }
 
     public override string ObtenerSiguienteEvolucion()
@@ -129,10 +137,11 @@ public class Squirtle : Pokemon
     }
 }
 
-class Wartortle : Pokemon
+public class Wartortle : Pokemon
 {
     public Wartortle(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
+        TipoPoder = "Agua";
     }
 
     public override string ObtenerSiguienteEvolucion()
@@ -146,9 +155,10 @@ class Wartortle : Pokemon
     }
 }
 
-class Blastoise : Pokemon
+public class Blastoise : Pokemon
 {
     public Blastoise(string nombre, DateTime fechaNacimiento) : base(nombre, fechaNacimiento)
     {
+        TipoPoder = "Agua";
     }
 }
