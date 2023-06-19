@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueba1Poke.ViewModels.PokemonViewModel">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="30">
+            <Label Text="Creación de Pokémon" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" Margin="0,0,0,20" />
+
+            <Entry Placeholder="Nombre" Text="{Binding Nombre}" Margin="0,0,0,10" />
+            <Entry Placeholder="Fecha de Nacimiento" Text="{Binding FechaNacimiento}" Margin="0,0,0,20" />
+
+            <Button Text="Crear Pokémon" BackgroundColor="#2196F3" TextColor="White" Command="{Binding GuardarPokemonCommand}" />
+            <Button Text="Evolucionar Pokémon" BackgroundColor="#4CAF50" TextColor="White" Command="{Binding EvolucionarPokemonCommand}" />
+
+            <ListView ItemsSource="{Binding Pokemones}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

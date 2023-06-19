@@ -10,8 +10,6 @@ namespace Prueba1Poke.Views
         public CrearPichuView()
         {
             InitializeComponent();
-            BindingContext = new CrearPichuViewModel();
         }
     }
 }
-

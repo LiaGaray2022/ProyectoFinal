@@ -11,8 +11,9 @@
 
             <Button Text="Crear Pokémon" BackgroundColor="#2196F3" TextColor="White" Command="{Binding CrearPokemonCommand}" />
 
+            <Button Text="Guardar" Command="{Binding GuardarPokemonCommand}" />
+
             <Label Text="{Binding ResultadoCreacion}" ></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-

@@ -27,7 +27,7 @@
     <EmbeddedResource Update="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\viewAnillos.xaml">
+    <EmbeddedResource Update="Views\PokemonViewModel.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\viewCategorias.xaml">

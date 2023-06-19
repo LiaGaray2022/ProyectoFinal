@@ -11,6 +11,19 @@ namespace Prueba1Poke.ViewModels
     {
         public ObservableCollection<Pokemon> Pokemones { get; set; } = new ObservableCollection<Pokemon>();
 
+        private Pokemon selectedPokemon;
+        public Pokemon SelectedPokemon
+        {
+            get => selectedPokemon;
+            set
+            {
+                if (selectedPokemon != value)
+                {
+                    selectedPokemon = value;
+                    OnPropertyChanged(nameof(SelectedPokemon));
+                }
+            }
+        }
         private string nombre;
         public string Nombre
         {
@@ -25,47 +38,84 @@ namespace Prueba1Poke.ViewModels
             }
         }
 
-        private string fechaNacimiento;
-        public string FechaNacimiento
-        {
-            get => fechaNacimiento;
-            set
-            {
-                if (fechaNacimiento != value)
-                {
-                    fechaNacimiento = value;
-                    OnPropertyChanged(nameof(FechaNacimiento));
-                }
-            }
-        }
-
         public ICommand GuardarPokemonCommand { get; }
+        public ICommand EvolucionarPokemonCommand { get; }
+        public DateTime FechaNacimiento { get; private set; }
 
         public CrearPichuViewModel()
         {
             GuardarPokemonCommand = new Command(GuardarPokemon);
+            EvolucionarPokemonCommand = new Command(EvolucionarPokemon);
         }
 
         private void GuardarPokemon()
         {
-            // Validar que se hayan ingresado el nombre y la fecha de nacimiento
-            if (string.IsNullOrWhiteSpace(Nombre) || string.IsNullOrWhiteSpace(FechaNacimiento))
+            if (string.IsNullOrWhiteSpace(Nombre)) // Validar si el nombre está en blanco o es nulo
             {
-                Application.Current.MainPage.DisplayAlert("Error", "Debes ingresar el nombre y la fecha de nacimiento", "OK");
+                Application.Current.MainPage.DisplayAlert("Error", "Debes ingresar un nombre para el Pokémon", "OK");
                 return;
             }
 
-            // Crear el objeto Pichu con los datos ingresados
-            Pokemon pichu = new Pokemon(Nombre, DateTime.Parse(FechaNacimiento));
-            {
-              
-            };
+            // Crear una nueva instancia de Pokemon con el nombre proporcionado
+            Pokemon nuevoPokemon = new Pichu(Nombre, FechaNacimiento);
 
-            // Agregar el Pichu a la colección de Pokemones
-            Pokemones.Add(pichu);
+            // Agregar el nuevo Pokémon a la colección
+            Pokemones.Add(nuevoPokemon);
 
             // Mostrar mensaje de confirmación
-            Application.Current.MainPage.DisplayAlert("Éxito", "¡Tu Pokémon ha sido creado!", "OK");
+            Application.Current.MainPage.DisplayAlert("Éxito", "Pokémon guardado correctamente", "OK");
+        }
+
+
+        private void EvolucionarPokemon()
+        {
+            if (SelectedPokemon == null)
+            {
+                Application.Current.MainPage.DisplayAlert("Error", "Debes seleccionar un Pokémon para evolucionar", "OK");
+                return;
+            }
+
+            // Verificar si el Pokémon seleccionado puede evolucionar
+            if (SelectedPokemon is IPokemonEvolucionable evolucionable)
+            {
+                // Obtener los datos de la evolución
+                string siguienteEvolucion = evolucionable.ObtenerSiguienteEvolucion();
+                Pokemon evolucion = evolucionable.CrearEvolucion();
+
+                // Reemplazar el Pokémon seleccionado con la evolución
+                int index = Pokemones.IndexOf(SelectedPokemon);
+                if (index != -1)
+                {
+                    Pokemones[index] = evolucion;
+
+                    // Mostrar mensaje de confirmación
+                    Application.Current.MainPage.DisplayAlert("Éxito", $"{SelectedPokemon.Nombre} ha evolucionado a {siguienteEvolucion}!", "OK");
+                }
+            }
+            else
+            {
+                // El Pokémon seleccionado no puede evolucionar
+                Application.Current.MainPage.DisplayAlert("Error", "El Pokémon seleccionado no puede evolucionar", "OK");
+            }
+        }
+
+        public string ObtenerUltimaEvolucion(Pokemon pokemon)
+        {
+            string ultimaEvolucion = pokemon.Nombre;
+            while (pokemon is IPokemonEvolucionable evolucionable)
+            {
+                Pokemon evolucion = evolucionable.CrearEvolucion();
+                if (evolucion != null)
+                {
+                    ultimaEvolucion = evolucion.Nombre;
+                    pokemon = evolucion;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return ultimaEvolucion;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
